@@ -1,0 +1,525 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+:root {
+    --amareloprincipal: #FFDE59;
+    --pretofonteprincipal: black;
+    --brancoprincipal: white;
+    --fontetitulos: "Pixelify Sans", sans-serif;
+    --fontetextos: sans-serif;
+}
+
+* {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* JOGO */
+.jogo-expressao {
+    min-height: 100vh;
+    background-image: url("transparentes/praiadeboaviagem-pixelart2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* CABEÇALHO */
+.cabecalho-jogo {
+    min-height: 5.5rem;
+    flex-shrink: 0;
+    background-color: var(--amareloprincipal);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.cabecalho-jogo h1 {
+    font-family: var(--fontetitulos);
+    font-size: 4rem;
+    color: var(--pretofonteprincipal);
+    text-shadow: var(--brancoprincipal) 1.5px 1.5px;
+    margin: 0;
+}
+
+.cabecalho-jogo h2 {
+    font-family: var(--fontetitulos);
+    font-size: 1.7rem;
+    line-height: 1.1;
+    text-align: center;
+    color: var(--pretofonteprincipal);
+    text-shadow: var(--brancoprincipal) 1.5px 1.5px;
+    margin: 0;
+}
+
+/* ÁREA DO JOGO */
+.area-jogo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    padding: 2rem;
+}
+
+/* EXPRESSÃO */
+.expressao-container {
+    width: 90%;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.expressao {
+    min-width: 500px;
+    max-width: 90%;
+    min-height: 90px;
+    padding: 0.5rem 2rem;
+    background-color: var(--brancoprincipal);
+    border: 4px solid var(--pretofonteprincipal);
+    border-radius: 18px;
+    box-shadow: 7px 7px 0 var(--pretofonteprincipal);
+    font-family: var(--fontetitulos);
+    font-size: 3.5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+
+/* TECLADO */
+.teclado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+/* LINHAS DO TECLADO */
+.linha-teclado {
+    display: flex;
+    justify-content: center;
+    gap: 0.2rem;
+}
+
+/* TECLAS */
+.tecla {
+    height: 30px;
+    min-width: 105px;
+    background-color: var(--brancoprincipal);
+    border: 3px solid var(--pretofonteprincipal);
+    border-radius: 7px;
+    font-family: var(--fontetitulos);
+    font-size: 1.5rem;
+    color: var(--pretofonteprincipal);
+    cursor: pointer;
+    transition: transform 0.12s ease;
+}
+
+/* HOVER DAS TECLAS */
+.tecla:hover {
+    transform: translateY(-3px);
+}
+
+/* CONTROLES */
+.controles-teclado {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.3rem;
+}
+
+.controle {
+    padding: 0.25rem 1rem;
+    background-color: var(--amareloprincipal);
+    border: 3px solid var(--brancoprincipal);
+    border-radius: 8px;
+    box-shadow: 3px 3px 0 var(--pretofonteprincipal);
+    font-family: var(--fontetitulos);
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.12s ease;
+}
+
+.controle:hover {
+    transform: translateY(-3px);
+}
+
+/* RESPOSTA DO ALUNO */
+.resposta-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 0.8rem;
+}
+
+#respostaAluno {
+    width: 340px;
+    height: 80px;
+    background-color: var(--brancoprincipal);
+    border: 4px solid var(--pretofonteprincipal);
+    border-radius: 18px;
+    box-shadow: 7px 7px 0 var(--pretofonteprincipal);
+    font-family: var(--fontetextos);
+    font-size: 3rem;
+    text-align: center;
+    outline: none;
+    transition: transform 0.15s ease;
+}
+
+/* HOVER DO CAMPO DO ALUNO */
+#respostaAluno:hover {
+    transform: translateY(-3px);
+}
+
+/* BOTÃO VERIFICAR */
+#verificar {
+    align-self: center;
+    margin-bottom: 1rem;
+    padding: 0.8rem 2rem;
+    font-family: var(--fontetitulos);
+    font-size: 1.5rem;
+    color: var(--pretofonteprincipal);
+    background-color: var(--amareloprincipal);
+    border: 4px solid var(--brancoprincipal);
+    border-radius: 15px;
+    box-shadow: 5px 5px 0 var(--pretofonteprincipal);
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+/* HOVER DO BOTÃO */
+#verificar:hover {
+    transform: translate(3px, 3px);
+    box-shadow: 2px 2px 0 var(--pretofonteprincipal);
+}
+
+/* BOTÃO PRESSIONADO */
+#verificar:active {
+    transform: translate(5px, 5px);
+    box-shadow: 0 0 0 var(--pretofonteprincipal);
+}
+
+/* RESULTADO */
+#resultado {
+    min-height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--fontetitulos);
+    font-size: 2.3rem;
+    margin: 0.5rem 1rem 1rem 1rem;
+    text-align: center;
+    padding: 0 1rem;
+}
+
+/* LOCAL */
+.local {
+    font-family: var(--fontetitulos);
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+
+/* RESPONSIVIDADE PARA TELAS MÉDIAS */
+@media (max-width: 1100px) {
+
+    /* CABEÇALHO */
+    .cabecalho-jogo {
+        min-height: 5rem;
+        padding: 0 1.5rem;
+    }
+
+    .cabecalho-jogo h1 {
+        font-size: 3.2rem;
+    }
+
+    .cabecalho-jogo h2 {
+        font-size: 1.45rem;
+    }
+
+    /* ÁREA DO JOGO */
+    .area-jogo {
+        gap: 1rem;
+        padding: 1.5rem 2rem;
+    }
+
+    /* EXPRESSÃO */
+    .expressao-container {
+        width: 95%;
+    }
+
+    .expressao {
+        min-width: 400px;
+        max-width: 95%;
+        min-height: 80px;
+        padding: 0.5rem 1.5rem;
+        font-size: 2.8rem;
+    }
+
+    /* TECLAS */
+    .tecla {
+        min-width: 85px;
+        height: 29px;
+        font-size: 1.35rem;
+    }
+
+    /* CONTROLES */
+    .controle {
+        padding: 0.25rem 0.8rem;
+        font-size: 0.95rem;
+    }
+
+    /* RESPOSTA */
+    #respostaAluno {
+        width: 300px;
+        height: 75px;
+        font-size: 2.5rem;
+    }
+
+    /* RESULTADO */
+    #resultado {
+        font-size: 2rem;
+    }
+
+    /* LOCAL */
+    .local {
+        font-size: 1.7rem;
+    }
+}
+
+/* RESPONSIVIDADE PARA TABLETS */
+@media (max-width: 768px) {
+
+    /* CABEÇALHO */
+    .cabecalho-jogo {
+        min-height: 4.5rem;
+        padding: 0 1rem;
+    }
+
+    .cabecalho-jogo h1 {
+        font-size: clamp(2.3rem, 7vw, 3rem);
+    }
+
+    .cabecalho-jogo h2 {
+        font-size: clamp(1.1rem, 3vw, 1.4rem);
+    }
+
+    /* ÁREA DO JOGO */
+    .area-jogo {
+        gap: 0.8rem;
+        padding: 1.5rem 1rem;
+    }
+
+    /* EXPRESSÃO */
+    .expressao-container {
+        width: 100%;
+        min-height: 80px;
+    }
+
+    .expressao {
+        width: 90%;
+        min-width: 0;
+        max-width: 90%;
+        min-height: 70px;
+        padding: 0.5rem 1rem;
+        font-size: clamp(2rem, 6vw, 2.7rem);
+        border-width: 3px;
+        border-radius: 14px;
+        box-shadow: 5px 5px 0 var(--pretofonteprincipal);
+    }
+
+    /* TECLADO */
+    .teclado {
+        width: 100%;
+        gap: 0.3rem;
+    }
+
+    .linha-teclado {
+        width: 100%;
+        gap: 0.15rem;
+    }
+
+    /* TECLAS */
+    .tecla {
+        width: 14vw;
+        min-width: 0;
+        height: 28px;
+        font-size: clamp(0.95rem, 2.8vw, 1.3rem);
+        border-width: 2px;
+        border-radius: 6px;
+    }
+
+    /* CONTROLES */
+    .controles-teclado {
+        gap: 0.4rem;
+        margin-top: 0.2rem;
+    }
+
+    .controle {
+        padding: 0.25rem 0.7rem;
+        font-size: 0.9rem;
+        border-width: 2px;
+    }
+
+    /* RESPOSTA */
+    .resposta-container {
+        margin-top: 0.6rem;
+        width: 100%;
+    }
+
+    #respostaAluno {
+        width: min(80%, 300px);
+        height: 65px;
+        font-size: 2.2rem;
+        border-width: 3px;
+        border-radius: 14px;
+        box-shadow: 5px 5px 0 var(--pretofonteprincipal);
+    }
+
+    /* RESULTADO */
+    #resultado {
+        min-height: 2.8rem;
+        font-size: 1.7rem;
+        margin: 0.4rem 0.8rem 1rem 0.8rem;
+    }
+
+    /* BOTÃO */
+    #verificar {
+        font-size: 1.3rem;
+        padding: 0.7rem 1.6rem;
+        margin-bottom: 0.5rem;
+    }
+
+    /* LOCAL */
+    .local {
+        font-size: 1.5rem;
+        margin-bottom: 0.8rem;
+    }
+}
+
+/* RESPONSIVIDADE PARA CELULARES */
+@media (max-width: 480px) {
+
+    /* CABEÇALHO */
+    .cabecalho-jogo {
+        min-height: 4rem;
+        padding: 0 0.7rem;
+    }
+
+    .cabecalho-jogo h1 {
+        font-size: 2rem;
+    }
+
+    .cabecalho-jogo h2 {
+        font-size: 0.95rem;
+    }
+
+    /* ÁREA DO JOGO */
+    .area-jogo {
+        gap: 0.6rem;
+        padding: 1rem 0.7rem;
+    }
+
+    /* EXPRESSÃO */
+    .expressao-container {
+        width: 100%;
+        min-height: 65px;
+    }
+
+    .expressao {
+        width: 95%;
+        max-width: 95%;
+        min-height: 60px;
+        padding: 0.4rem 0.7rem;
+        font-size: clamp(1.5rem, 7vw, 2rem);
+        border-width: 3px;
+        border-radius: 12px;
+        box-shadow: 4px 4px 0 var(--pretofonteprincipal);
+    }
+
+    /* TECLADO */
+    .teclado {
+        width: 100%;
+        gap: 0.2rem;
+    }
+
+    .linha-teclado {
+        width: 100%;
+        gap: 0.1rem;
+    }
+
+    /* TECLAS */
+    .tecla {
+        width: 14vw;
+        height: 25px;
+        font-size: clamp(0.75rem, 3.5vw, 1rem);
+        border-width: 2px;
+        border-radius: 5px;
+    }
+
+    /* CONTROLES */
+    .controles-teclado {
+        gap: 0.3rem;
+        margin-top: 0.15rem;
+    }
+
+    .controle {
+        padding: 0.2rem 0.55rem;
+        font-size: 0.75rem;
+        border-width: 2px;
+        border-radius: 6px;
+        box-shadow: 2px 2px 0 var(--pretofonteprincipal);
+    }
+
+    /* RESPOSTA */
+    .resposta-container {
+        margin-top: 0.4rem;
+    }
+
+    #respostaAluno {
+        width: min(85%, 260px);
+        height: 55px;
+        font-size: 1.9rem;
+        border-width: 3px;
+        border-radius: 12px;
+        box-shadow: 4px 4px 0 var(--pretofonteprincipal);
+    }
+
+    /* RESULTADO */
+    #resultado {
+        min-height: 2.5rem;
+        font-size: 1.4rem;
+        margin: 0.3rem 0.5rem 0.8rem 0.5rem;
+        padding: 0 0.5rem;
+        white-space: normal;
+    }
+
+    /* BOTÃO */
+    #verificar {
+        font-size: 1.1rem;
+        padding: 0.6rem 1.3rem;
+        border-width: 3px;
+    }
+
+    /* LOCAL */
+    .local {
+        font-size: 1.2rem;
+        margin-bottom: 0.6rem;
+    }
+}
