@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decomposição</title>
+    <link rel="stylesheet" href="styledecomposicao.css">
+</head>
+
+<body>
+    <!-- JOGO DE DECOMPOSIÇÃO -->
+    <main class="jogo-decomposicao">
+
+        <!-- CABEÇALHO -->
+        <header class="cabecalho-jogo">
+            <h1>JOGO</h1>
+            <h2>DECOMPOSIÇÃO</h2>
+        </header>
+
+        <!-- ÁREA DO JOGO -->
+
+        <section class="area-jogo">
+
+            <!-- NÚMERO ESCOLHIDO PELA PROFESSORA -->
+            <div class="numero-central">
+                <input type="number" id="numero" min="0" max="99999" placeholder="?" autocomplete="off"></div>
+
+            <!--  DECOMPOSIÇÃO -->
+            <div class="decomposicao">
+
+                <!-- DEZENA DE MILHAR -->
+                <input type="number" class="resposta" placeholder="?" autocomplete="off">
+                <span class="sinal">+</span>
+
+                <!-- UNIDADE DE MILHAR -->
+                <input type="number" class="resposta" placeholder="?" autocomplete="off">
+                <span class="sinal">+</span>
+
+                <!-- CENTENA -->
+                <input type="number" class="resposta" placeholder="?" autocomplete="off">
+                <span class="sinal"> + </span>
+
+                <!-- DEZENA -->
+                <input type="number" class="resposta" placeholder="?" autocomplete="off">
+                <span class="sinal">+</span>
+
+                <!-- UNIDADE -->
+                <input type="number" class="resposta" placeholder="?" autocomplete="off">
+
+            </div>
+
+        </section>
+
+        <!-- BOTÃO VERIFICAR -->
+        <button id="verificar"> VERIFICAR </button>
+
+        <!-- RESULTADO -->
+        <p id="resultado"></p>
+
+        <!-- LOCAL -->
+        <p class="local"> Praça do Baobá </p>
+
+    </main>
+
+    <script src="decomposicao.js"></script>
+
+</body>
+
+</html>

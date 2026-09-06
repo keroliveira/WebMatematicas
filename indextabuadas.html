@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuadas</title>
+    <link rel="stylesheet" href="styletabuadas.css">
+</head>
+
+<body>
+
+    <!-- JOGO DE TABUADAS -->
+    <main class="jogo-tabuadas">
+
+        <!-- CABEÇALHO -->
+        <header class="cabecalho-jogo">
+            <h1>JOGO</h1>
+            <h2>TABUADAS</h2>
+        </header>
+
+        <!-- ÁREA DO JOGO -->
+        <section class="area-jogo">
+
+            <!-- PRIMEIRO NÚMERO -->
+            <div class="numero numero-primeiro">
+
+                <select id="primeiroNumero">
+                    <option value="" selected disabled>?</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+
+            <!-- SÍMBOLO DE MULTIPLICAÇÃO -->
+            <div class="simbolo">×</div>
+
+            <!-- SEGUNDO NÚMERO -->
+            <div class="numero numero-segundo">
+                <select id="segundoNumero">
+                    <option value="" selected disabled>?</option>
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+
+            <!-- RESPOSTA DO ESTUDANTE -->
+            <div class="resposta">
+                <input type="number" id="resposta" placeholder="?" autocomplete="off"></div>
+        </section>
+
+        <!-- BOTÃO DA PROFESSORA -->
+        <button id="verificar">VERIFICAR</button>
+
+        <!-- RESULTADO -->
+        <p id="mensagem"></p>
+
+        <!-- RODAPÉ -->
+        <p class="marcozero">Rua da Aurora</p>
+    </main>
+
+    <script src="tabuadas.js"></script>
+
+</body>
+
+</html>

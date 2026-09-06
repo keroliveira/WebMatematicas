@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+/* VARIÁVEIS */
+:root {
+    --amareloprincipal: #FFDE59;
+    --pretofonteprincipal: black;
+    --brancoprincipal: white;
+    --fontetitulos: "Pixelify Sans", sans-serif;
+    --fontetextos: sans-serif;
+}
+
+/* CONFIGURAÇÕES GERAIS */
+* {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+/* CABEÇALHO */
+.cabecalho a {
+    font-family: var(--fontetitulos);
+    color: var(--pretofonteprincipal);
+    text-shadow: var(--brancoprincipal) 1.5px 1.5px;
+    font-size: 4rem;
+    padding: 1rem;
+}
+
+nav {
+    background-color: var(--amareloprincipal);
+    height: 5rem;
+}
+
+nav ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+/* ABERTURA */
+.aberturadojogo {
+    height: calc(100vh - 5rem);
+    background-image: url("tourrecifense/torredecristal-pixelart.png");
+    background-size: 90%;
+    background-position: center 20%;
+    background-repeat: repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+
+    /* Impedir que o título e as nuvens ultrapassem visualmente a abertura */
+    overflow: hidden;
+}
+
+/* TÍTULO PRINCIPAL */
+.tituloprincipal {
+    font-family: var(--fontetitulos);
+    color: var(--amareloprincipal);
+    margin-right: 25px;
+    background-color: transparent;
+    font-size: 7rem;
+    text-align: right;
+    text-shadow: var(--pretofonteprincipal) 3px 3px;
+
+    /* O título acima das nuvens */
+    position: relative;
+    z-index: 2;
+
+    /* POSIÇÃO INICIAL: Começa abaixo da tela */
+    transform: translateY(100vh);
+
+    /* A animação acontece toda vez que a página é carregada */
+    animation: surgirTitulo 1.5s ease-out forwards;
+}
+
+/* ANIMAÇÃO DO TÍTULO */
+@keyframes surgirTitulo {
+
+    /* Começa no final da tela */
+    0% {
+        transform: translateY(100vh);
+    }
+
+    /* Passa um pouquinho do ponto final, criando um pequeno "pulo" */
+    70% {
+        transform: translateY(-10px);
+    }
+
+    /* Volta para a posição original */
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* NUVENS */
+.nuvens {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+
+    /* As nuvens são apenas decoração */
+    pointer-events: none;
+
+    /* As nuvens ficam atrás do título */
+    z-index: 1;
+}
+
+.nuvem {
+    position: absolute;
+    width: 180px;
+    height: auto;
+    opacity: 0.95;
+
+    /* Movimento contínuo */
+    animation-name: passarNuvem;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* NUVEM 1 */
+.nuvem1 {
+    top: 15%;
+    left: -220px;
+    width: 430px;
+    animation-duration: 32s;
+}
+
+/* NUVEM 2 */
+.nuvem2 {
+    top: 35%;
+    left: -300px;
+    width: 430px;
+    animation-duration: 42s;
+
+    /* A nuvem começa no meio do percurso */
+    animation-delay: -15s;
+}
+
+/* NUVEM 3 */
+.nuvem3 {
+    top: 55%;
+    left: -180px;
+    width: 550px;
+    animation-duration: 27s;
+    animation-delay: -8s;
+}
+
+/* MOVIMENTO DAS NUVENS */
+@keyframes passarNuvem {
+
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(calc(100vw + 400px));
+    }
+}
+
+/* OPÇÕES DE JOGOS */
+.opcoesdejogos {
+    min-height: 100vh;
+    background-image: url("decoracaogeral/pixelart-ceu2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* TÍTULO — OPÇÕES DE JOGOS */
+.opcoesdejogos h2 {
+    height: 5rem;
+    background-color: var(--amareloprincipal);
+    font-family: var(--fontetitulos);
+    color: var(--pretofonteprincipal);
+    text-shadow: var(--brancoprincipal) 1.5px 1.5px;
+    font-size: 4rem;
+    padding-left: 1rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+/* LISTA DE JOGOS */
+.listadejogos {
+    list-style: none;
+    display: grid;
+
+    /* 3 COLUNAS */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px 30px;
+    justify-content: center;
+    align-content: center;
+    width: min(1040px, calc(100% - 4rem));
+    margin: 0 auto;
+    padding: 0;
+    flex: 1;
+}
+
+/* BOTÕES DOS JOGOS */
+.listadejogos li a {
+    width: 100%;
+    height: 170px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: var(--fontetitulos);
+    font-size: 2.8rem;
+    color: var(--pretofonteprincipal);
+    background-color: var(--amareloprincipal);
+    border-radius: 25px;
+    border: 4px solid var(--brancoprincipal);
+    box-shadow: 7px 7px 0px var(--pretofonteprincipal);
+    transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+/* EFEITO DE CLIQUE — HOVER */
+.listadejogos li a:hover {
+    transform: translate(5px, 5px);
+    box-shadow: 2px 2px 0px var(--pretofonteprincipal);
+}
+
+/* EFEITO DE CLIQUE — PRESSIONADO */
+.listadejogos li a:active {
+    transform: translate(7px, 7px);
+    box-shadow: 0 0 0 var(--pretofonteprincipal);
+}
+
+/* FUNCIONALIDADES */
+.funcionalidadesdojogo {
+    min-height: 100vh;
+    background-image: url("decoracaogeral/pixelart-ceu2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* TÍTULO */
+.funcionalidadesdojogo h2 {
+    height: 5rem;
+    background-color: var(--amareloprincipal);
+    font-family: var(--fontetitulos);
+    color: var(--pretofonteprincipal);
+    text-shadow: var(--brancoprincipal) 1.5px 1.5px;
+    font-size: 4rem;
+    padding-left: 1rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+/* TEXTO */
+.funcionalidadesdojogo p:first-of-type {
+    font-family: var(--fontetextos);
+    font-size: 1.9rem;
+    line-height: 1.3;
+    margin: 2rem 2.2rem 0 2.2rem;
+}
+
+/* RODAPÉ */
+.funcionalidadesdojogo p:last-of-type {
+    margin-top: auto;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* @keroliveira.dev */
+.funcionalidadesdojogo p small {
+    font-family: var(--fontetitulos);
+    font-size: 2rem;
+}
+
+/* SOBRE */
+.sobreojogo {
+    min-height: 100vh;
+    background-image: url("decoracaogeral/pixelart-ceu2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+/* TÍTULO */
+.sobreojogo h2 {
+    height: 5rem;
+    background-color: var(--amareloprincipal);
+    font-family: var(--fontetitulos);
+    color: var(--pretofonteprincipal);
+    text-shadow: var(--brancoprincipal) 1.5px 1.5px;
+    font-size: 4rem;
+    padding-left: 1rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+/* TEXTO */
+.sobreojogo p:first-of-type {
+    width: 65%;
+    font-family: var(--fontetextos);
+    font-size: 1.9rem;
+    line-height: 1.3;
+    margin: 2rem 0 0 2.2rem;
+}
+
+/* IMAGEM */
+.sobreojogo img {
+    position: absolute;
+    width: 580px;
+    height: auto;
+    right: 7%;
+    top: 4.5rem;
+}
+
+/* RODAPÉ */
+.sobreojogo p:last-of-type {
+    margin-top: auto;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+/* @keroliveira.dev */
+.sobreojogo p small {
+    font-family: var(--fontetitulos);
+    font-size: 2rem;
+}

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expressão Numérica</title>
+    <link rel="stylesheet" href="styleexpressao.css">
+</head>
+
+<body>
+    <!-- JOGO DE EXPRESSÃO NUMÉRICA -->
+
+    <main class="jogo-expressao">
+
+        <!-- CABEÇALHO -->
+        <header class="cabecalho-jogo">
+            <h1>JOGO</h1>
+            <h2> EXPRESSÃO <br> NUMÉRICA </h2>
+        </header>
+
+        <!-- ÁREA DO JOGO -->
+        <section class="area-jogo">
+
+            <!-- EXPRESSÃO MONTADA PELA PROFESSORA -->
+            <div class="expressao-container">
+                <div id="expressao" class="expressao">
+                    <!-- A expressão está aqui -->
+                </div>
+            </div>
+
+            <!-- TECLADO DIGITAL -->
+            <div class="teclado">
+
+                <!-- NÚMEROS -->
+                <div class="linha-teclado linha-numeros">
+                    <button
+                        class="tecla numero"
+                        data-valor="0"
+                    >
+                        0
+                    </button>
+
+                    <button
+                        class="tecla numero"
+                        data-valor="1"
+                    >
+                        1
+                    </button>
+
+                    <button
+                        class="tecla numero"
+                        data-valor="2"
+                    >
+                        2
+                    </button>
+
+                    <button
+                        class="tecla numero"
+                        data-valor="3"
+                    >
+                        3
+                    </button>
+
+                    <button
+                        class="tecla numero"
+                        data-valor="4"
+                    >
+                        4
+                    </button>
+
+                    <button
+                        class="tecla numero"
+                        data-valor="5"
+                    >
+                        5
+                    </button>
+
+                    <button
+                        class="tecla numero"
+                        data-valor="6"
+                    >
+                        6
+                    </button>
+
+                    <button
+                        class="tecla numero"
+                        data-valor="7"
+                    >
+                        7
+                    </button>
+
+                    <button
+                        class="tecla numero"
+                        data-valor="8"
+                    >
+                        8
+                    </button>
+
+                    <button
+                        class="tecla numero"
+                        data-valor="9"
+                    >
+                        9
+                    </button>
+
+                </div>
+
+
+                <!-- =================================================
+                     PARÊNTESES, COLCHETES E CHAVES
+                ================================================== -->
+
+                <div class="linha-teclado linha-simbolos">
+
+                    <button
+                        class="tecla simbolo"
+                        data-valor="("
+                    >
+                        (
+                    </button>
+
+                    <button
+                        class="tecla simbolo"
+                        data-valor=")"
+                    >
+                        )
+                    </button>
+
+                    <button
+                        class="tecla simbolo"
+                        data-valor="["
+                    >
+                        [
+                    </button>
+
+                    <button
+                        class="tecla simbolo"
+                        data-valor="]"
+                    >
+                        ]
+                    </button>
+
+                    <button
+                        class="tecla simbolo"
+                        data-valor="{"
+                    >
+                        {
+                    </button>
+
+                    <button
+                        class="tecla simbolo"
+                        data-valor="}"
+                    >
+                        }
+                    </button>
+
+                </div>
+
+
+                <!-- =================================================
+                     OPERADORES
+                ================================================== -->
+
+                <div class="linha-teclado linha-operacoes">
+
+                    <button
+                        class="tecla operador"
+                        data-valor="-"
+                    >
+                        −
+                    </button>
+
+                    <button
+                        class="tecla operador"
+                        data-valor="+"
+                    >
+                        +
+                    </button>
+
+                    <button
+                        class="tecla operador"
+                        data-valor="*"
+                    >
+                        ×
+                    </button>
+
+                    <button
+                        class="tecla operador"
+                        data-valor="/"
+                    >
+                        ÷
+                    </button>
+
+                </div>
+
+
+                <!-- =================================================
+                     CONTROLES DO TECLADO
+                ================================================== -->
+
+                <div class="controles-teclado">
+
+                    <button
+                        id="apagar"
+                        class="controle"
+                    >
+                        APAGAR
+                    </button>
+
+                    <button
+                        id="limpar"
+                        class="controle"
+                    >
+                        LIMPAR
+                    </button>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- =================================================
+                 RESPOSTA DO ALUNO
+            ================================================== -->
+
+            <div class="resposta-container">
+
+                <input
+                    type="text"
+                    id="respostaAluno"
+                    placeholder="?"
+                    autocomplete="off"
+                >
+
+            </div>
+
+
+        </section>
+
+
+        <!-- =================================================
+             BOTÃO VERIFICAR
+        ================================================== -->
+
+        <button id="verificar">
+            VERIFICAR
+        </button>
+
+
+        <!-- =================================================
+             RESULTADO
+        ================================================== -->
+
+        <p id="resultado"></p>
+
+
+        <!-- =================================================
+             LOCAL
+        ================================================== -->
+
+        <p class="local">
+            Praia de Boa Viagem
+        </p>
+
+
+    </main>
+
+
+    <!-- =====================================================
+         JAVASCRIPT
+    ====================================================== -->
+
+    <script src="expressaonumerica.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antecessor e Sucessor</title>
+    <link rel="stylesheet" href="styleantecessor.css">
+</head>
+
+<body>
+
+    <!-- JOGO DE ANTECESSOR E SUCESSOR -->
+    <main class="jogo-antecessor">
+        
+        <!-- CABEÇALHO -->
+        <header class="cabecalho-jogo">
+            <h1>JOGO</h1>
+            <h2>ANTECESSOR E<br>SUCESSOR</h2>
+        </header>
+
+        <!-- ÁREA DO JOGO -->
+        <section class="area-jogo">
+
+            <!-- ANTECESSOR -->
+            <div class="resposta resposta-antecessor">
+                <h3>ANTECESSOR</h3>
+                <input
+                    type="number"
+                    id="respostaAntecessor"
+                    placeholder="?"
+                >
+            </div>
+
+            <!-- NÚMERO CENTRAL -->
+            <div class="numero-central">
+                <input type="number" id="numero" value="100"></div>
+
+            <!-- SUCESSOR -->
+            <div class="resposta resposta-sucessor"><h3>SUCESSOR</h3><input type="number" id="respostaSucessor" placeholder="?"></div>
+        </section>
+
+        <!-- BOTÃO DA PROFESSORA -->
+        <button id="verificar">VERIFICAR</button>
+
+        <!-- RESULTADO -->
+        <p id="resultado"></p>
+
+        <!-- RODAPÉ -->
+        <p class="marcozero">Praça do Marco Zero</p>
+
+    </main>
+
+    <script src="antecessor.js"></script>
+
+</body>
+
+</html>

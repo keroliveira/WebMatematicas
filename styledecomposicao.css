@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+:root {
+    --amareloprincipal: #FFDE59;
+    --pretofonteprincipal: black;
+    --brancoprincipal: white;
+    --fontetitulos: "Pixelify Sans", sans-serif;
+    --fontetextos: sans-serif;
+}
+
+* {
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* JOGO DE DECOMPOSIÇÃO */
+.jogo-decomposicao {
+    height: 100vh;
+    background-image: url("transparentes/pracadobaoba-pixelart2.png");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* CABEÇALHO */
+.cabecalho-jogo {
+    height: 5.5rem;
+    flex-shrink: 0;
+    background-color: var(--amareloprincipal);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.cabecalho-jogo h1 {
+    font-family: var(--fontetitulos);
+    font-size: 4rem;
+    color: var(--pretofonteprincipal);
+    text-shadow: var(--brancoprincipal) 1.5px 1.5px;
+    margin: 0;
+}
+
+.cabecalho-jogo h2 {
+    font-family: var(--fontetitulos);
+    font-size: 1.7rem;
+    line-height: 1.1;
+    text-align: center;
+    color: var(--pretofonteprincipal);
+    text-shadow: var(--brancoprincipal) 1.5px 1.5px;
+    margin: 0;
+}
+
+/* ÁREA DO JOGO */
+.area-jogo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4.5rem;
+    padding: 0 2rem;
+}
+
+/* NÚMERO CENTRAL */
+.numero-central input {
+    width: 350px;
+    height: 85px;
+    background-color: var(--brancoprincipal);
+    border: 4px solid var(--pretofonteprincipal);
+    border-radius: 18px;
+    box-shadow: 7px 7px 0 var(--pretofonteprincipal);
+    font-family: var(--fontetextos);
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+    outline: none;
+    transition: transform 0.15s ease;
+}
+
+/* HOVER DO NÚMERO */
+.numero-central input:hover {
+    transform: translateY(-3px);
+}
+
+/* DECOMPOSIÇÃO */
+.decomposicao {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* CAMPOS DE RESPOSTA */
+.resposta {
+    width: 185px;
+    height: 50px;
+    background-color: var(--brancoprincipal);
+    border: 3px solid var(--pretofonteprincipal);
+    border-radius: 10px;
+    box-shadow: 5px 5px 0 var(--pretofonteprincipal);
+    font-family: var(--fontetextos);
+    font-size: 1.7rem;
+    text-align: center;
+    outline: none;
+    transition: transform 0.15s ease;
+}
+
+/* HOVER DOS CAMPOS */
+.resposta:hover {
+    transform: translateY(-3px);
+}
+
+/* SINAIS DE + */
+.sinal {
+    font-family: var(--fontetitulos);
+    font-size: 3rem;
+    font-weight: bold;
+    color: var(--pretofonteprincipal);
+    text-shadow: var(--brancoprincipal) 1.5px 1.5px;
+}
+
+/*  REMOVE AS SETINHAS DOS INPUTS */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* BOTÃO VERIFICAR */
+#verificar {
+    align-self: center;
+    margin-bottom: 1rem;
+    padding: 0.8rem 2rem;
+    font-family: var(--fontetitulos);
+    font-size: 1.5rem;
+    color: var(--pretofonteprincipal);
+    background-color: var(--amareloprincipal);
+    border: 4px solid var(--brancoprincipal);
+    border-radius: 15px;
+    box-shadow: 5px 5px 0 var(--pretofonteprincipal);
+    cursor: pointer;
+    transition: transform 0.1s ease;
+}
+
+/* HOVER DO BOTÃO */
+#verificar:hover {
+    transform: translate(3px, 3px);
+    box-shadow: 2px 2px 0 var(--pretofonteprincipal);
+}
+
+/* BOTÃO PRESSIONADO */
+#verificar:active {
+    transform: translate(5px, 5px);
+    box-shadow: 0 0 0 var(--pretofonteprincipal);
+}
+
+/* RESULTADO */
+#resultado {
+    position: absolute;
+    left: 50%;
+    bottom: 9rem;
+    transform: translateX(-50%);
+    font-family: var(--fontetitulos);
+    font-size: 2.3rem;
+    text-align: center;
+    margin: 0;
+}
+
+/* LOCAL */
+.local {
+    font-family: var(--fontetitulos);
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 0 1rem 0;
+}

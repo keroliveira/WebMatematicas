@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operações Básicas</title>
+    <link rel="stylesheet" href="styleoperacoesbasicas.css">
+</head>
+
+<body>
+
+    <!-- =-=-=-=-=- JOGO: SOMA =-=-=-=-=- -->
+
+    <section class="operacao-jogo operacao-soma" data-operacao="soma">
+
+        <!-- CABEÇALHO -->
+        <header class="cabecalho-jogo">
+            <h1>JOGO</h1>
+            <h2>OPERAÇÃO: SOMA</h2>
+        </header>
+
+        <!-- ÁREA DO JOGO -->
+        <div class="area-jogo">
+
+            <!-- PRIMEIRO NÚMERO -->
+            <div class="numero">
+                <input type="number" class="primeiro-numero" min="0" max="999999" placeholder="?"></div>
+
+            <!-- SÍMBOLO -->
+            <div class="simbolo"> + </div>
+
+            <!-- SEGUNDO NÚMERO -->
+            <div class="numero">
+                <input type="number" class="segundo-numero" min="0" max="999999" placeholder="?"></div>
+
+            <!-- RESPOSTA -->
+            <div class="resposta">
+                <input type="number" class="resposta-aluno" placeholder="?" autocomplete="off">
+            </div>
+
+        </div>
+
+        <!-- BOTÃO -->
+        <button class="verificar">VERIFICAR</button>
+
+        <!-- MENSAGEM -->
+        <p class="mensagem"></p>
+
+        <!-- LOCAL -->
+        <p class="local">Rua do Bom Jesus</p>
+
+    </section>
+
+    <!-- =-=-=-=-=- JOGO: SUBTRAÇÃO =-=-=-=-=- -->
+
+    <section class="operacao-jogo operacao-subtracao" data-operacao="subtracao">
+             
+        <!-- CABEÇALHO -->
+        <header class="cabecalho-jogo">
+            <h1>JOGO</h1>
+            <h2>OPERAÇÃO: SUBTRAÇÃO</h2>
+        </header>
+
+        <!-- ÁREA DO JOGO -->
+        <div class="area-jogo">
+
+            <!-- PRIMEIRO NÚMERO -->
+            <div class="numero">
+                <input type="number" class="primeiro-numero" min="0" max="999999" placeholder="?"></div>
+
+            <!-- SÍMBOLO -->
+            <div class="simbolo"> − </div>
+
+            <!-- SEGUNDO NÚMERO -->
+            <div class="numero">
+                <input type="number" class="segundo-numero" min="0" max="999999" placeholder="?">
+            </div>
+
+            <!-- RESPOSTA -->
+            <div class="resposta">
+                <input type="number"  class="resposta-aluno" placeholder="?" autocomplete="off">
+            </div>
+
+        </div>
+
+        <!-- BOTÃO -->
+        <button class="verificar">VERIFICAR</button>
+
+        <!-- MENSAGEM -->
+        <p class="mensagem"></p>
+
+        <!-- LOCAL -->
+        <p class="local">Mercado de São José</p>
+
+    </section>
+
+    <!-- =-=-=-=-=- JOGO: MULTIPLICAÇÃO =-=-=-=-=- -->
+
+    <section class="operacao-jogo operacao-multiplicacao" data-operacao="multiplicacao">
+
+        <!-- CABEÇALHO -->
+        <header class="cabecalho-jogo">
+            <h1>JOGO</h1>
+            <h2>OPERAÇÃO: MULTIPLICAÇÃO</h2>
+        </header>
+
+        <!-- ÁREA DO JOGO -->
+        <div class="area-jogo">
+
+            <!-- PRIMEIRO NÚMERO -->
+            <div class="numero">
+                <input type="number" class="primeiro-numero" min="0" max="999999" placeholder="?">
+            </div>
+
+            <!-- SÍMBOLO -->
+            <div class="simbolo"> × </div>
+
+            <!-- SEGUNDO NÚMERO -->
+            <div class="numero">
+                <input type="number" class="segundo-numero" min="0" max="999999" placeholder="?">
+            </div>
+
+            <!-- RESPOSTA -->
+            <div class="resposta">
+                <input type="number" class="resposta-aluno" placeholder="?" autocomplete="off">
+            </div>
+
+        </div>
+
+        <!-- BOTÃO -->
+        <button class="verificar"> VERIFICAR </button>
+
+        <!-- MENSAGEM -->
+        <p class="mensagem"></p>
+
+        <!-- LOCAL -->
+        <p class="local">Praça da República</p>
+
+    </section>
+
+    <!-- =-=-=-=-=- OPERAÇÃO: DIVISÃO =-=-=-=-=- -->
+     
+    <section class="operacao-jogo operacao-divisao" data-operacao="divisao">
+
+        <!-- CABEÇALHO -->
+        <header class="cabecalho-jogo">
+            <h1>JOGO</h1>
+            <h2>OPERAÇÃO: DIVISÃO</h2>
+        </header>
+
+        <!-- ÁREA DO JOGO -->
+        <div class="area-jogo">
+
+            <!-- PRIMEIRO NÚMERO -->
+            <div class="numero">
+                <input type="number" class="primeiro-numero" min="0" max="999999" placeholder="?"></div>
+
+            <!-- SÍMBOLO -->
+            <div class="simbolo"> ÷ </div>
+
+            <!-- SEGUNDO NÚMERO -->
+            <div class="numero">
+                <input type="number" class="segundo-numero" min="1" max="999999" placeholder="?">
+            </div>
+
+            <!-- RESPOSTA -->
+            <div class="resposta">
+                <input type="number" class="resposta-aluno" placeholder="?" autocomplete="off">
+            </div>
+
+        </div>
+
+        <!-- BOTÃO -->
+        <button class="verificar">  VERIFICAR </button>
+
+        <!-- MENSAGEM -->
+        <p class="mensagem"></p>
+
+        <!-- LOCAL -->
+        <p class="local">Cinema São Luiz</p>
+
+    </section>
+
+    <script src="operacoesbasicas.js"></script>
+
+</body>
+
+</html>

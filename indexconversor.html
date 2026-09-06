@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Medidas</title>
+    <link rel="stylesheet" href="styleconversor.css">
+</head>
+
+<body>
+    <!-- CONVERSOR DE METRO -->
+
+    <section class="conversor conversor-metro"
+             data-tipo="metro">
+
+        <!-- CABEÇALHO -->
+        <header class="cabecalho-jogo">
+            <h1>JOGO</h1>
+            <h2> CONVERSOR DE<br> MEDIDAS: METRO </h2>
+        </header>
+
+        <!-- ÁREA DO JOGO -->
+        <main class="area-jogo">
+
+            <!-- ESCALA -->
+            <div class="escala">
+                <button class="unidade" data-fator="1000"> KM </button>
+                <button class="unidade" data-fator="100"> HM </button>
+                <button class="unidade" data-fator="10"> DAM </button>
+                <button class="unidade" data-fator="1"> M </button>
+                <button class="unidade" data-fator="0.1"> DM </button>
+                <button class="unidade" data-fator="0.01"> CM </button>
+                <button class="unidade" data-fator="0.001"> MM </button>
+            </div>
+
+            <!-- CONVERSÃO -->
+            <div class="linha-conversao">
+
+                <!-- VALOR DA PROFESSORA -->
+                <div class="campo-medida">
+                    <input type="text" class="valor-inicial" placeholder="?" autocomplete="off" >
+                    <span class="unidade-origem"> ORIGEM </span>
+                </div>
+
+                <span class="texto-para"> PARA </span>
+
+                <!-- UNIDADE DE DESTINO -->
+                <div class="campo-destino"><span class="destino-escolhido"> ? </span>
+                </div>
+                <span class="igual"> = </span>
+
+                <!-- RESPOSTA DO ALUNO -->
+                <div class="campo-medida"><input type="text" class="resposta-aluno" placeholder="?" autocomplete="off">
+                </div>
+
+            </div>
+
+        </main>
+
+        <!-- BOTÃO VERIFICAR -->
+        <button class="verificar"> VERIFICAR </button>
+
+        <!-- RESULTADO -->
+        <p class="resultado"></p>
+
+        <!-- LOCAL -->
+        <p class="local"> Cais José Estelita </p>
+
+    </section>
+
+    <!-- CONVERSOR DE LITRO -->
+    <section class="conversor conversor-litro" data-tipo="litro">
+
+        <!-- CABEÇALHO -->
+        <header class="cabecalho-jogo">
+            <h1>JOGO</h1>
+            <h2> CONVERSOR DE<br> MEDIDAS: LITRO </h2>
+        </header>
+
+        <main class="area-jogo">
+
+            <!-- ESCALA -->
+            <div class="escala">
+                <button class="unidade" data-fator="1000"> KL </button>
+                <button class="unidade" data-fator="100"> HL </button>
+                <button class="unidade" data-fator="10"> DAL </button>
+                <button class="unidade" data-fator="1"> L </button>
+                <button class="unidade" data-fator="0.1"> DL </button>
+                <button class="unidade" data-fator="0.01"> CL </button>
+                <button class="unidade" data-fator="0.001"> ML </button>
+            </div>
+
+            <!-- CONVERSÃO -->
+            <div class="linha-conversao">
+
+                <div class="campo-medida">
+                    <input type="text" class="valor-inicial" placeholder="?" autocomplete="off">
+                    <span class="unidade-origem"> ORIGEM </span>
+                </div>
+
+                <span class="texto-para"> PARA </span>
+                <div class="campo-destino"><span class="destino-escolhido"> ? </span></div>
+                <span class="igual"> = </span>
+                <div class="campo-medida"><input type="text" class="resposta-aluno" placeholder="?" autocomplete="off"></div>
+            </div>
+
+        </main>
+
+        <button class="verificar"> VERIFICAR </button>
+
+        <p class="resultado"></p>
+        <p class="local"> Paço do Frevo </p>
+
+    </section>
+
+    <!-- CONVERSOR DE GRAMA -->
+    <section class="conversor conversor-grama" data-tipo="grama">
+
+        <!-- CABEÇALHO -->
+        <header class="cabecalho-jogo">
+            <h1>JOGO</h1>
+            <h2> CONVERSOR DE <br> MEDIDAS: GRAMA
+            </h2>
+        </header>
+
+        <main class="area-jogo">
+
+            <!-- ESCALA -->
+            <div class="escala">
+                <button class="unidade" data-fator="1000"> KG </button>
+                <button class="unidade" data-fator="100"> HG </button>
+                <button class="unidade" data-fator="10"> DAG </button>
+                <button class="unidade" data-fator="1"> G </button>
+                <button class="unidade" data-fator="0.1"> DG </button>
+                <button class="unidade" data-fator="0.01"> CG </button>
+                <button class="unidade" data-fator="0.001"> MG </button>
+            </div>
+
+            <!-- CONVERSÃO -->
+            <div class="linha-conversao">
+
+                <div class="campo-medida">
+                    <input type="text" class="valor-inicial" placeholder="?" autocomplete="off" >
+                    <span class="unidade-origem"> ORIGEM </span>
+                </div>
+                <span class="texto-para"> PARA </span>
+                <div class="campo-destino"><span class="destino-escolhido"> ? </span></div>
+                <span class="igual"> = </span>
+                <div class="campo-medida"><input type="text" class="resposta-aluno" placeholder="?" autocomplete="off"></div>
+
+            </div>
+
+        </main>
+
+        <button class="verificar"> VERIFICAR </button>
+        <p class="resultado"></p>
+        <p class="local"> Parque de Dois Irmãos </p>
+
+    </section>
+
+    <script src="conversordemedidas.js"></script>
+
+</body>
+
+</html>
