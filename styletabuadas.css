@@ -184,7 +184,7 @@ body {
     margin: 0 0 1rem 0;
 }
 
-/* RESPONSIVIDADE — TELAS MÉDIAS */
+/* RESPONSIVIDADE PARA TELAS MÉDIAS */
 @media (max-width: 1100px) {
 
     /* CABEÇALHO */
@@ -237,7 +237,7 @@ body {
     }
 }
 
-/* RESPONSIVIDADE — TABLETS */
+/* RESPONSIVIDADE PARA TABLETS */
 @media (max-width: 768px) {
     
     /* CABEÇALHO */
@@ -307,7 +307,7 @@ body {
     }
 }
 
-/* RESPONSIVIDADE — CELULARES */
+/* RESPONSIVIDADE PARA CELULARES */
 @media (max-width: 480px) {
 
     /* CABEÇALHO */
