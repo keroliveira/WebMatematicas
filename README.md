@@ -1,4 +1,4 @@
-# 🎮 WebMatemáticas
+# WebMatemáticas 🎮
 
 ### Jogos interativos de Matemática para mini recifenses
 
@@ -87,6 +87,10 @@ Os estudantes podem discutir estratégias e comparar resultados antes de apresen
 O recurso também pode ser utilizado em tablets ou outros dispositivos para momentos de prática e retomada de conteúdos.
 
 Em todas essas situações, o professor permanece como mediador da atividade.
+
+## Visão de abertura do WebMatemáticas
+<img width="1305" height="822" alt="aberturawebmatematicas" src="https://github.com/user-attachments/assets/86fed398-47dd-4261-bf78-906f1bf621f6" />
+
 
 
 
