@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Operações Básicas</title>
+
+    <link rel="stylesheet" href="styleoperacoesbasicas.css">
+</head>
+
+<body>
+
+    <!-- JOGO: SOMA -->
+    <section class="operacao-jogo operacao-soma" data-operacao="soma">
+
+        <header class="cabecalho-jogo">
+            <h1>JOGO</h1>
+            <h2>OPERAÇÃO: SOMA</h2>
+        </header>
+
+        <div class="area-jogo">
+
+            <div class="numero">
+                <input
+                    type="number"
+                    class="primeiro-numero"
+                    min="0"
+                    max="9999999"
+                    step="1"
+                    placeholder="?"
+                    autocomplete="off"
+                    aria-label="Primeiro número da soma"
+                >
+            </div>
+
+            <div class="simbolo" aria-hidden="true">+</div>
+
+            <div class="numero">
+                <input
+                    type="number"
+                    class="segundo-numero"
+                    min="0"
+                    max="9999999"
+                    step="1"
+                    placeholder="?"
+                    autocomplete="off"
+                    aria-label="Segundo número da soma"
+                >
+            </div>
+
+            <div class="resposta">
+                <input
+                    type="number"
+                    class="resposta-aluno"
+                    step="1"
+                    placeholder="?"
+                    autocomplete="off"
+                    aria-label="Resposta da soma"
+                >
+            </div>
+
+        </div>
+
+        <button class="verificar" type="button">VERIFICAR</button>
+
+        <p class="mensagem" aria-live="polite"></p>
+
+        <p class="local">Rua do Bom Jesus</p>
+
+    </section>
+
+    <!-- JOGO: SUBTRAÇÃO -->
+    <section class="operacao-jogo operacao-subtracao" data-operacao="subtracao">
+
+        <header class="cabecalho-jogo">
+            <h1>JOGO</h1>
+            <h2>OPERAÇÃO: SUBTRAÇÃO</h2>
+        </header>
+
+        <div class="area-jogo">
+
+            <div class="numero">
+                <input
+                    type="number"
+                    class="primeiro-numero"
+                    min="0"
+                    max="9999999"
+                    step="1"
+                    placeholder="?"
+                    autocomplete="off"
+                    aria-label="Primeiro número da subtração"
+                >
+            </div>
+
+            <div class="simbolo" aria-hidden="true">−</div>
+
+            <div class="numero">
+                <input
+                    type="number"
+                    class="segundo-numero"
+                    min="0"
+                    max="9999999"
+                    step="1"
+                    placeholder="?"
+                    autocomplete="off"
+                    aria-label="Segundo número da subtração"
+                >
+            </div>
+
+            <div class="resposta">
+                <input
+                    type="number"
+                    class="resposta-aluno"
+                    step="1"
+                    placeholder="?"
+                    autocomplete="off"
+                    aria-label="Resposta da subtração"
+                >
+            </div>
+
+        </div>
+
+        <button class="verificar" type="button">VERIFICAR</button>
+
+        <p class="mensagem" aria-live="polite"></p>
+
+        <p class="local">Mercado de São José</p>
+
+    </section>
+
+    <!-- JOGO: MULTIPLICAÇÃO -->
+    <section class="operacao-jogo operacao-multiplicacao" data-operacao="multiplicacao">
+
+        <header class="cabecalho-jogo">
+            <h1>JOGO</h1>
+            <h2>OPERAÇÃO: MULTIPLICAÇÃO</h2>
+        </header>
+
+        <div class="area-jogo">
+
+            <div class="numero">
+                <input
+                    type="number"
+                    class="primeiro-numero"
+                    min="0"
+                    max="9999999"
+                    step="1"
+                    placeholder="?"
+                    autocomplete="off"
+                    aria-label="Primeiro fator da multiplicação"
+                >
+            </div>
+
+            <div class="simbolo" aria-hidden="true">×</div>
+
+            <div class="numero">
+                <input
+                    type="number"
+                    class="segundo-numero"
+                    min="0"
+                    max="9999999"
+                    step="1"
+                    placeholder="?"
+                    autocomplete="off"
+                    aria-label="Segundo fator da multiplicação"
+                >
+            </div>
+
+            <div class="resposta">
+                <input
+                    type="number"
+                    class="resposta-aluno"
+                    step="1"
+                    placeholder="?"
+                    autocomplete="off"
+                    aria-label="Resultado da multiplicação"
+                >
+            </div>
+
+        </div>
+
+        <button class="verificar" type="button">VERIFICAR</button>
+
+        <p class="mensagem" aria-live="polite"></p>
+
+        <p class="local">Praça da República</p>
+
+    </section>
+
+    <!-- JOGO: DIVISÃO -->
+    <section class="operacao-jogo operacao-divisao" data-operacao="divisao">
+
+        <header class="cabecalho-jogo">
+            <h1>JOGO</h1>
+            <h2>OPERAÇÃO: DIVISÃO</h2>
+        </header>
+
+        <div class="area-jogo">
+
+            <div class="numero">
+                <input
+                    type="number"
+                    class="primeiro-numero"
+                    min="0"
+                    max="9999999"
+                    step="1"
+                    placeholder="?"
+                    autocomplete="off"
+                    aria-label="Dividendo"
+                >
+            </div>
+
+            <div class="simbolo" aria-hidden="true">÷</div>
+
+            <div class="numero">
+                <input
+                    type="number"
+                    class="segundo-numero"
+                    min="1"
+                    max="9999999"
+                    step="1"
+                    placeholder="?"
+                    autocomplete="off"
+                    aria-label="Divisor"
+                >
+            </div>
+
+            <div class="resposta">
+                <input
+                    type="number"
+                    class="resposta-aluno"
+                    step="1"
+                    placeholder="?"
+                    autocomplete="off"
+                    aria-label="Quociente da divisão"
+                >
+            </div>
+
+        </div>
+
+        <button class="verificar" type="button">VERIFICAR</button>
+
+        <p class="mensagem" aria-live="polite"></p>
+
+        <p class="local">Cinema São Luiz</p>
+
+    </section>
+
+    <script src="operacoesbasicas.js"></script>
+
+</body>
+</html>
